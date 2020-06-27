@@ -44,7 +44,7 @@ function buildPlot(sample){
                 colorscale: "Rainbow",
                 labels: otu_labels,
                 type: 'scatter',
-                opacity: 0.7
+                opacity: 0.5
             }
           };
           
