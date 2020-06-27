@@ -44,7 +44,7 @@ function buildPlot(sample){
                 colorscale: "Rainbow",
                 labels: otu_labels,
                 type: 'scatter',
-                opacity: 0.5
+                opacity: 0.7
             }
           };
           
@@ -60,14 +60,14 @@ function buildPlot(sample){
         Plotly.newPlot('bubble', data1, layout);
 
  //Bar Chart       
-        var y_lab = otu_ids.splice(0, 10).reverse()
+        var y_lab = otu_ids
         y_lab = y_lab.map(i => 'OTU ' + i);
         
         var trace2 = {
           type: 'bar',
-          x: sample_values.splice(0,10).reverse(),
+          x: sample_values,
           y: y_lab,
-          text: otu_labels.splice(0,10).reverse(),
+          text: otu_labels,
           orientation: 'h'
           };
 
