@@ -48,7 +48,7 @@ function buildPlots(sample){
         
         var layout = {
           title: 'Bacteria Cultures per Sample',
-          margin: {t:1 },
+          margin: {t:3 },
           hovermode: "closest",
           xaxis: { title: 'OTU ID' }
         };
