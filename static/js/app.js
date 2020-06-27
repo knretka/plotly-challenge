@@ -101,7 +101,7 @@ function init() {
       });
   
       const firstSample = sampleNames[0];
-      (firstSample);
+      buildPlot(firstSample);
       getMetaData(firstSample);
     });
   }
